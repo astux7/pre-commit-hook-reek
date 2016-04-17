@@ -1,0 +1,22 @@
+IrresponsibleModule:
+  enabled: false
+
+TooManyStatements:
+  enabled: true
+  max_statements: 6
+
+NestedIterators:
+  max_allowed_nesting: 3
+
+DuplicateMethodCall:
+  max_calls: 2
+
+DataClump:
+  max_copies: 2
+  min_clump_size: 2
+
+LongParameterList:
+  max_params: 3
+  overrides:
+    initialize:
+      max_params: 5
