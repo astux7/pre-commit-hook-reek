@@ -5,10 +5,10 @@ Reek is a popular code smell detector for Ruby, which have simple configuration 
 Git already give as a native configuration .git/hooks/ to do any action after or before git commands.
 
 My solution to make everything automatic  as possible (cause we forgot to do lots of stuff if it is become too complicated):
-> add reek gem to Gemfile
-> .reek -> file with reek configurations
-> /lib/tasks/pre_commit_hook.rake -> this is rake task file for create pre-commit hook file in .git/hooks dir. Enough to run 1st time you clone the project.
-> .git/hooks/pre-commit -> file exist then you run the task mentioned before or you already have it.
+1. add reek gem to Gemfile <br />
+2. .reek -> file with reek configurations <br />
+3. /lib/tasks/pre_commit_hook.rake -> this is rake task file for create pre-commit hook file in .git/hooks dir. Enough to run 1st time you clone the project. <br />
+4 .git/hooks/pre-commit -> file exist then you run the task mentioned before or you already have it. <br />
 
 __How it works?__
 
