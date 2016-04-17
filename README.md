@@ -28,4 +28,4 @@ __Some “+” about the script:__
 
 __Author: Asta B. (C) 2016__
 
-Lisense: Open Source
+License: Open Source
