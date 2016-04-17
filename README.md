@@ -17,10 +17,12 @@ __Easy?!__ <br />
 Now every time you run ```git commit -m "message"``` you will run pre-commit hook script to check code quality.
 
 __Some “-“ about this script:__
+
 [-]Need to copy files and run rake task (not fully automatic) <br />
 [-]if the project already exist and have lots of offences - which files you modify could have the offences from old commits. This means you can fix the offences (yours and existing in the files you changed) or do ignore as mentioned in script.
 
 __Some “+” about the script:__
+
 [+]One time initialise the script with rake task <br />
 [+]Guarantee code quality <br />
 [+]Easy to modify reek config and don’t need to change anything else for pre-commit hook  <br />
