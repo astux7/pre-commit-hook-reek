@@ -1,3 +1,5 @@
+require 'fileutils'
+
 namespace :pre_commit_hook do
 
   task :init do
@@ -34,6 +36,7 @@ namespace :pre_commit_hook do
   def create
     # overrides the current file or creates new if not existed
     File.open(git_precommit_hook_path, 'w:binary') { |file| file.write(pre_commit_hook_text) }
+    FileUtils.chmod '+x', git_precommit_hook_path
     output(:created)
   end
 
